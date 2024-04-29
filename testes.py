@@ -9,4 +9,3 @@ elif (A+B)/2 > 4 :
 else :
   print("Reprovado")
 
-# Seu código vai aqui

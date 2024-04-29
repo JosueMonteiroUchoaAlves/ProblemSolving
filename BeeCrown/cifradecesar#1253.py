@@ -1,13 +1,13 @@
-possibilidades = "ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZ"
+possibilities = "ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
 ## CODE FULLY WORKING
 
-n = int(input())
-respostas = []
-for _ in range(n):
-  codigo = input()
+querysNumber = int(input())
+awswers = []
+for _ in range(querysNumber):
+  code = input()
   i = int(input())
-  decifrado = "".join([possibilidades[possibilidades.find(char)-i+26] for char in codigo])
-  respostas.append(decifrado)
+  decifred = "".join([possibilities[possibilities.find(char)-i+26] for char in code])
+  awswers.append(decifred)
 
-print('\n'.join(map(str, respostas)))
+print('\n'.join(map(str, awswers)))

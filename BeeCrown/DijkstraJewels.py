@@ -3,13 +3,13 @@
 
 ## CODE FULLY WORKING ##
 
-joias = []
+jewel = []
 try: #try until theres a EOFerror 
   while (n := input()): # Its seems like attribuying the value n here at the while it's more quick
-    joias.append(n)
+    jewel.append(n)
 except: #EOFerror
     pass
-unicos = set(joias)
-print(len(unicos))
+uniqueJewels = set(jewel)
+print(len(uniqueJewels))
 
 
