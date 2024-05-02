@@ -182,3 +182,33 @@ print(f"{texto:#<{espac}}") # deixar espacoa  direita
 #################################################
 # | #                                       # | #
 # | #                                       # | # 
+###################TESTE-8#######################
+"""_summary_
+  Substituindo o método de compressão de listas pelo operador "*" ao criar uma lista
+  
+  resultados:
+  
+  A funcao test_8 executou em        0.00096509 segundos
+A funcao test_8_improved executou em 8.17999825e-05 segundos
+  
+  TEVE UMA MELHORA ALTAMENTE SIGNIFICATIVA
+"""
+variavel_global = 10
+
+@clock
+def test_8():
+  lista = [0 for i in range(40000)]
+    
+@clock
+def test_8_improved():
+  lista = [0]*40000
+  
+test_8()
+test_8_improved()
+#################################################
+# | #                                       # | #
+# | #                                       # | # 
+
+
+
+fazer um map versus list comprehention pra percorrer listas
