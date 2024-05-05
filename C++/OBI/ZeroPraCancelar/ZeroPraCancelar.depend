@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1714872993 source:c:\users\davi\documents\competicao\c++\zeropracancelar\main.cpp
+	<iostream>
+	<vector>
+	<numeric>
+
