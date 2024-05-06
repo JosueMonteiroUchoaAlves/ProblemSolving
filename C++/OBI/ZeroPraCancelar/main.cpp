@@ -1,6 +1,9 @@
 #include <iostream>
 #include <vector>
 #include <numeric> // para usar o accumulate
+
+// poderia ter substuido todos os imports por: #include <bits/stdc++.h>
+
 using namespace std;
 
 int main()
@@ -25,14 +28,15 @@ int main()
       valores.pop_back(); // Usando o pop_back pois ele nao diminui o tamanho do meu vetor (poderia usar o erease() se quisesse)
     }
   }
-  if (!valores.empty()){
-      soma = accumulate(valores.begin(), valores.end(), 0); // valor inicial de 0
-      cout << soma;
+  if (!valores.empty())
+  {
+    soma = accumulate(valores.begin(), valores.end(), 0); // valor inicial de 0
+    cout << soma;
   }
-  else{
+  else
+  {
     cout << 0;
   }
-
 }
 
 /*
