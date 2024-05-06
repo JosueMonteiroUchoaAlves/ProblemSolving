@@ -1,4 +1,4 @@
-from codetimer import clock
+from Tests.codetimer import clock
 
 with open("data.txt", "r") as archive:
     data = archive.read().split(", ")

@@ -1,4 +1,4 @@
-from codetimer import clock
+from Tests.codetimer import clock
 
 # Chamo meu decorador
 #@clock

@@ -20,52 +20,52 @@ int i;
 
 int main()
 {
-    // A estrutura do cout e:
-    // cout << valor1 << valor2 << ...;
+  // A estrutura do cout e:
+  // cout << valor1 << valor2 << ...;
 
-    cout << 1898 << endl;          // Colocando um fim de linha
-    cout << 3 << ' ' << 1 << endl; // Colocando um espaco entre os caracteres/numeros
+  cout << 1898 << endl;          // Colocando um fim de linha
+  cout << 3 << ' ' << 1 << endl; // Colocando um espaco entre os caracteres/numeros
 
-    // Podemos realizar operaçoes com os numeros no C++
-    // + -> adiçao
-    // - -> subtraçao
-    // / -> divisao
-    // * -> multiplicaçao
-    // % -> modulo, ou seja, a % b = resto da divisao inteira de a por b. Ex.: 8 % 5 = 3
-    cout << 2 * 3 * 5 * 7 << endl;
+  // Podemos realizar operaçoes com os numeros no C++
+  // + -> adiçao
+  // - -> subtraçao
+  // / -> divisao
+  // * -> multiplicaçao
+  // % -> modulo, ou seja, a % b = resto da divisao inteira de a por b. Ex.: 8 % 5 = 3
+  cout << 2 * 3 * 5 * 7 << endl;
 
-    // Tambem e possivel imprimir frases (de maneira geral, varios caracteres de uma vez so)
-    // usando as aspas duplas para indicar que e uma string (o nome nao importa agora), assim:
-    cout << "Ola mundo!" << endl;
+  // Tambem e possivel imprimir frases (de maneira geral, varios caracteres de uma vez so)
+  // usando as aspas duplas para indicar que e uma string (o nome nao importa agora), assim:
+  cout << "Ola mundo!" << endl;
 
-    cout << "Hello World!\n";
-    /*
-    Criacao de variaveis:
-    Tipo Nome;
-    ou
-    Tipo Nome = Valor;
-    */
-    char letra = 'b'; // Aspa simples
-    double variavel_decimal_grande = 2.4999999;
-    float variavel_decimal_pequena = 2.5;
-    bool booleano = true;
-    string nome = "Josue"; // Aspas Duplas
-    i++;
-    i--;
-    i += 3;
-    i *= 4;
-    cout << i;
-    cin >> nome;
-    cout << nome;
-    /*
-    operadores logicos
-    >
-    <
-    >=
-    <=
-    ==
-    !=
-    */
+  cout << "Hello World!\n";
+  /*
+  Criacao de variaveis:
+  Tipo Nome;
+  ou
+  Tipo Nome = Valor;
+  */
+  char letra = 'b'; // Aspa simples
+  double variavel_decimal_grande = 2.4999999;
+  float variavel_decimal_pequena = 2.5;
+  bool booleano = true;
+  string nome = "Josue"; // Aspas Duplas
+  i++;
+  i--;
+  i += 3;
+  i *= 4;
+  cout << i;
+  cin >> nome;
+  cout << nome;
+  /*
+  operadores logicos
+  >
+  <
+  >=
+  <=
+  ==
+  !=
+  */
 
-    return 0;
+  return 0;
 }
