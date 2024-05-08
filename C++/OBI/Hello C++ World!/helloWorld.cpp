@@ -58,7 +58,7 @@ int main()
   cin >> nome;
   cout << nome;
   /*
-  operadores logicos
+  operadores logicos de comparacao
   >
   <
   >=

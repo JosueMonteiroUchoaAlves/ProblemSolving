@@ -4,7 +4,7 @@
 using namespace std;
 
 // https://neps.academy/br/exercise/2025
-
+// PASSED ALL THE TESTS
 const int MAX = 100;
 int ocupados[MAX];
 
@@ -33,5 +33,4 @@ int main()
   }
   cout << total;
   return 0;
-  io
 }
