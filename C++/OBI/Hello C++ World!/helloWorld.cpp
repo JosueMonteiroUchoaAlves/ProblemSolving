@@ -67,5 +67,17 @@ int main()
   !=
   */
 
+  /*
+   No caso específico de adicionar 1 ou subtrair 1 de uma variável também existem
+  outros tipos de operadores. Para acrescentar existe o x++ e o ++x, assim como
+  para subtrair existe o x-- e o --x. Se essas expressões forem usadas com o objetivo
+  exclusivo de incrementar/decrementar em 1 a variável, tanto faz usar a com o símbolo
+  para direita ou esquerda (pós e pré incremento/decremento, respectivamente).
+  Mas caso esse valor esteja sendo impresso, por exemplo, em cout << x++; a ordem das operações é:
+
+  Imprime o valor de x.
+  Incrementa o valor de x em 1.
+
+  */
   return 0;
 }

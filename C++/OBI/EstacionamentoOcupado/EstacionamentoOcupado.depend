@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1715130991 source:c:\users\davi\documents\competicao\c++\obi\estacionamentoocupado\main.cpp
+	<iostream>
+	<bits/stdc++.h>
+
