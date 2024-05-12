@@ -15,6 +15,11 @@ using namespace std;
 /* Uma dica e que se você declarar um numero dentro da main
  ele tera um valor aleatorio muito grande, mas se declarar fora
   ele vai ser inicializado com o valor padrao, que e 0
+
+  Uma prática comum (e até recomendada) declarar o vetor fora da main, já que isso inicializa os
+  valores de cada posição com 0, e com pouco mais posições do que o valor máximo de N
+  (para o problema, um tamanho por volta de 106+10
+  é recomendado), para que erros no código ou problemas/diferenças de compiladores não provoquem respostas erradas ou erros de acesso de memória.
   */
 int i;
 
