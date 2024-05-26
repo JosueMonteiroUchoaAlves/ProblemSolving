@@ -1,11 +1,10 @@
-# Lendo a entrada do exercício
-A = float(input())
-B = float(input())
-
-if (A+B)/2 < 7 :
-    print("Aprovado")
-elif (A+B)/2 > 4 :
-    print("Recuperacao" )
-else :
-  print("Reprovado")
-
+def possibleChanges(usernames):
+  result= []
+  for username in usernames:
+    if sorted(username) == list(username):
+      result.append("NO")
+    else:
+      result.append("YES")
+      continue
+  return result
+print(possibleChanges(["foo"]))
