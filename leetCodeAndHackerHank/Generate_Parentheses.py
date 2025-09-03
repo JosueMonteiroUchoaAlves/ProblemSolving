@@ -3,9 +3,8 @@ from typing import List
 
 class Solution:
     def generateParenthesis(self, n: int) -> List[str]:
-        parenthesesStack = []
+        parentheses = []
         answer = []
-        aberturas, fechamentos = 0, 0
         def backtraking( parenthesesStack: list, aberturas: int, fechamentos: int, answer:list):
             if (aberturas == fechamentos) and aberturas == n:
                 answer.append("".join(parenthesesStack.copy()))
@@ -23,7 +22,7 @@ class Solution:
                 backtraking(parenthesesStack, aberturas, fechamentos, answer)
                 parenthesesStack.pop()
                 fechamentos -= 1
-        backtraking(parenthesesStack, aberturas, fechamentos, answer)
+        backtraking(parentheses, 0, 0, answer)
         return answer
 
 S = Solution()
