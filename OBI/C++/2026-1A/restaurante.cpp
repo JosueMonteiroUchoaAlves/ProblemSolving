@@ -2,7 +2,10 @@
 // Compilador online da OBI
 // ========================
 
-// 60/100 pontos (mas acho que já sei porque...)
+/*  100/100 pontos 
+    realmente... era um erro bobo de logica
+    testei com a questão "Taxi" do Codeforces, que é praticamente idêntica
+*/
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -28,28 +31,35 @@ int main() {
         cout << total << '\n';
     }
     else{
-        total += g4;
-        // divide por 2 e arredonda
-        restog2=g2%2; // se sobrar um par
-        total += (int) (g2-restog2)/2 ;
-        if (g1>g3){
-            total += g3; // mesas com N3 completas, porem sobraram g1
-            g1 -= g3;
-            if(restog2==1){// so pode ser 1 par
-                    total += 1; // preenche a mesa com o grupo g2 que faltou
-                    g1 -= 2; // tira 2 do g1 que podem sentar nela
-            }
-            if (g1 > 0){ // se realmente nao tinha espaco pra todo mundo que falou do g1
-                restog1= g1%4;
-                if(restog1!=0){
-                    total+=1;
-                }
-                total+=(g1-restog1)/4;
-            }
+        total += g4; // cada grupo tem seu taxi
 
+        restog2=g2%2; // resto = 1 se sobrar um par senao 0
+
+        total += (int) (g2-restog2)/2 ;
+
+        if (g1>g3){
+            total += g3; // mesas com N3 completas...
+            g1 -= g3; // porem vao sobrar alguns g1
+        }else{
+            // senao nao sobra g1 mesmo...
+            total += g3; // entao vai ser literalmente os g3
+            g1=0;
         }
-        else{
-            total += g3;
+
+        if(restog2==1){// se sobrou um par "folgado" 
+            total += 1; // preenche uma mesa com o grupo g2 que faltou
+            if(g1 != 0){ // e sobraram g1 tambem
+                g1 -= 2; // tira 2 do g1 que podem sentar nela
+            }
+        }
+        if (g1 > 0){ // se realmente nao tinha espaco pra todo mundo que faltou do g1
+            restog1= g1%4; // vejo se vai sobrar gente
+
+            total+=(g1-restog1)/4; // todos os g1 - os que nao completam a mesa
+
+            if(restog1!=0){ 
+                total+=1; // ponho a mesa dos que nao tinham completado a mesa
+            }
         }
             cout << total << '\n';
     }
