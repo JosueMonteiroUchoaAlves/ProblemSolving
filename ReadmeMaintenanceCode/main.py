@@ -1,7 +1,7 @@
 from pathlib import Path
 import urllib.parse
 
-root = Path('../')
+root = Path('./')
 
 def recursiveDeepening(dir: Path, lvl: int, structuredReadme: list) -> list:
     paths = sorted(
@@ -18,15 +18,10 @@ def recursiveDeepening(dir: Path, lvl: int, structuredReadme: list) -> list:
         else:
             # Cresce 2 traços por nível. Ex: lvl 1 = ═--═, lvl 2 = ═----═
             stem = "═" + "-" * (lvl * 2) + "═"
-            
-        line_visual = f"{prefix}{stem} {obj.name}"
-        
-        # CORREÇÃO DO LINK: obj.relative_to(root) remove o '../' problemático.
-        # Agora o caminho gerado parte do mesmo local onde o README.md está salvo.
+                    
         rel_path = obj.relative_to(root)
         url_path = urllib.parse.quote(rel_path.as_posix(), safe='/')
-        
-        line_md = f"[{line_visual}]({url_path})  "
+        line_md = f"{prefix}{stem} [{obj.name}]({url_path})  "
         structuredReadme.append(line_md)
         
         if obj.is_dir():
