@@ -285,3 +285,6 @@ vcpkg_installed/
 ## test output & cache
 Testing/
 .cache/
+
+# Testing codes
+Tests/
